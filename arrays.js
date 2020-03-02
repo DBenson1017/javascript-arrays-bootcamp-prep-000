@@ -11,8 +11,9 @@ function destructivelyAddElementToBeginningOfArray(array,element){
   array.unshift('foo') //opposite of shift, this adds a new element in index 0 
   return array //the original array is modified, unlike above where we declared a new array and kept the old 
 }
-function addElementToEndOfArray(array,element){
-  array = [1]
+function addElementToEndOfArray(array,element){ 
+  //hard coded 
+  array = [1] 
   array.push('foo')
   return array
 }
@@ -29,7 +30,7 @@ array.shift()
 return array
 }
 function removeElementFromBeginningOfArray(array){
-  array = array.slice(1)
+  array = array.slice(1) // removes everything before i=1, so starts at i=o, skips over the first element, then removes it 
   return array
 }
 function destructivelyRemoveElementFromEndOfArray(array){
@@ -37,7 +38,7 @@ array.pop()
 return array
 }
 function removeElementFromEndOfArray(array){
-  return array.slice(0,array.length-1)
+  return array.slice(0,array.length-1) // this doens't actually pop off the elelment, but returns everything BUT the final element 
 }
 
 
