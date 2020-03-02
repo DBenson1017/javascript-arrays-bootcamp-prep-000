@@ -8,12 +8,12 @@ function addElementToBeginningOfArray(array, element) { //name of function and p
 }
 
 function destructivelyAddElementToBeginningOfArray(array,element){
-  array.unshift('foo')
-  return array
+  array.unshift('foo') //opposite of shift, this adds a new element in index 0 
+  return array //the original array is modified, unlike above where we declared a new array and kept the old 
 }
 function addElementToEndOfArray(array,element){
-  array = [1]
-  array.push('foo')
+  array = []
+  array.push(element)
   return array
 }
 function destructivelyAddElementToEndOfArray(array,element){
