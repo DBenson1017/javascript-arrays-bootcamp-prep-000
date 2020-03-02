@@ -1,8 +1,10 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 
-function addElementToBeginningOfArray(array, element) {
+function addElementToBeginningOfArray(array, element) { //name of function and parameters 
   var newArray = [element, array[0]]
+  //declares a new array, which is the element we want to add infront of the original array. the oringinal array does not change 
   return newArray
+  // returns the new array we created, but adding an element infront of the original
 }
 
 function destructivelyAddElementToBeginningOfArray(array,element){
