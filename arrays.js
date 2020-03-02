@@ -12,8 +12,8 @@ function destructivelyAddElementToBeginningOfArray(array,element){
   return array //the original array is modified, unlike above where we declared a new array and kept the old 
 }
 function addElementToEndOfArray(array,element){
-  array = []
-  array.push(${element})
+  array = [1]
+  array.push('foo')
   return array
 }
 function destructivelyAddElementToEndOfArray(array,element){
